@@ -28,8 +28,8 @@ La solution exacte est connue : `u(x, y) = sin(2πx) sin(2πy) / (8π²)`, ce qu
 ```
 poisson-2d-hdf5/
 ├── src/
-│   ├── poisson_hdf5.py     # résolution, sauvegarde HDF5, export VTK
-│   └── graphiques.py       # relecture HDF5 : courbe de convergence et surface 3D
+│   ├── poisson_hdf5.py     
+│   └── graphiques.py       # courbe de convergence et surface 3D
 ├── results/
 │   ├── resultats.hdf5
 │   ├── visualisation_N10.vtk
@@ -48,7 +48,7 @@ python poisson_hdf5.py    # calcule les solutions, écrit resultats.hdf5 et visu
 python graphiques.py      # génère les figures à partir du fichier HDF5
 ```
 
-Pour la visualisation 3D : ouvrir `results/visualisation_N10.vtk` dans Paraview, puis appliquer le filtre *Warp By Scalar*.
+
 
 ## Résultats
 
